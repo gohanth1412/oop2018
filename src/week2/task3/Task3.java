@@ -5,7 +5,7 @@ public class Task3 {
 
 }
 
-//TODO: khai báo 3 class tương ứng với 3 đối tựong thực tế ở dứới
+//TODO: khai báo 3 class tương ứng với 3 đối tượng thực tế ở dứới
 class giaovien{
     // 3 thuoc tinh cua doi tuong
     private int tuoi;
