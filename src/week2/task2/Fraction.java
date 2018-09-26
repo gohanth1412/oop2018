@@ -68,5 +68,6 @@ public class Fraction {
         e.numerator /= b ;
         e.denominator /= b;
         return e;
+
     }
 }
