@@ -3,7 +3,7 @@ public class Fraction {
 
 
     public static int gcd(int a, int b) {
-        // TODO: Tính u?c chung l?n nh?t c?a 2 s? a, b
+        // TODO: Tính ước chung lớn nhất của 2 số a, b
         int c = 0;
         for(int i=1;i<=a || i<= b;i++)
         {
@@ -13,7 +13,7 @@ public class Fraction {
         return c;
     }
 
-    // TODO: khai báo các thu?c tính
+    // TODO: khai báo các thuộc tính
 
     public int numerator;
     public int denominator;
@@ -21,13 +21,13 @@ public class Fraction {
     {
     }
     public Fraction(int numerator, int denominator) {
-        // TODO: kh?i t?o giá tr? cho các thu?c tính numberator (t? s?), denominator (m?u s?)
+        // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
         this.numerator = numerator;
         this.denominator = denominator;
     }
 
     public Fraction add(Fraction other) {
-        // TODO: Phuong th?c c?ng hai phân s? (this và other), tr? v? d?i tu?ng Fraction m?i
+        // TODO: Phuong thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction a = new Fraction();
         a.numerator = this.numerator*other.denominator + this.denominator*other.numerator;
         a.denominator = this.denominator*other.denominator;
@@ -38,7 +38,7 @@ public class Fraction {
     }
 
     public Fraction subtract(Fraction other) {
-        // TODO: Phuong th?c tr? hai phân s? (this và other), tr? v? d?i tu?ng Fraction m?i
+        // TODO: Phuong thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction c = new Fraction();
         c.numerator = this.numerator*other.denominator - this.denominator*other.numerator;
         c.denominator = this.denominator*other.denominator;
@@ -49,7 +49,7 @@ public class Fraction {
     }
 
     public Fraction multiply(Fraction other) {
-        // TODO: Phuong th?c nhân hai phân s? (this và other), tr? v? d?i tu?ng Fraction m?i
+        // TODO: Phuong thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction d = new Fraction();
         d.numerator = this.numerator*other.numerator;
         d.denominator = this.denominator*other.denominator;
@@ -60,7 +60,7 @@ public class Fraction {
     }
 
     public Fraction divide(Fraction other) {
-        // TODO: Phuong th?c chia hai phân s? (this và other), tr? v? d?i tu?ng Fraction m?i
+        // TODO: Phuong thức chia hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction e = new Fraction();
         e.numerator = this.numerator*other.denominator;
         e.denominator = this.denominator*other.numerator;
