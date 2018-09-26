@@ -2,37 +2,66 @@ package week1;
 
 public class Student {
 
-    // TODO: khai báo các thuộc tính cho Student
+    private String name;
+    private String id;
+    private String group;
+    private String email;
 
-    // TODO: khai báo các phương thức getter, setter cho Student
+    public String getName() {
+        return this.name;
+    }
 
-    /**
-     * Constructor 1
-     */
+    public void setName(String n) {
+        this.name = n;
+    }
+    public String getId() {
+        return this.id;
+    }
+
+    public void setId(String ids) {
+        this.id = ids;
+    }
+    public String getGroup() {
+        return this.group;
+    }
+
+    public void setGroup(String gr) {
+        this.group = gr;
+    }
+    public void setEmail(String em) {
+        this.email = em;
+    }
+    public String getEmail() {
+        return this.email;
+    }
+
+
     Student() {
-        // TODO:
+        this.name = "Student";
+        this.id = "000";
+        this.group = "INT22041";
+        this.email = "uet@vnu.edu.vn";
+
     }
 
-    /**
-     * Constructor 2
-     * @param n
-     * @param sid
-     * @param em
-     */
     Student(String n, String sid, String em) {
-        // TODO:
+        this.name = n;
+        this.id = sid;
+        this.group = "INT22041";
+        this.email = em;
+
     }
 
-    /**
-     * Constructor 3
-     * @param s
-     */
     Student(Student s) {
-        // TODO:
+        this.name = s.name;
+        this.id = s.id;
+        this.group = s.group;
+        this.email = s.email;
+
     }
 
     String getInfo() {
-        // TODO:
-        return null; // xóa dòng này sau khi cài đặt
+        String TTSV ="Name: "+ name + "\nID: " + id + "\nGroup: " + group + "\nEmail: " + email + "\n";
+        return TTSV;
     }
 }
